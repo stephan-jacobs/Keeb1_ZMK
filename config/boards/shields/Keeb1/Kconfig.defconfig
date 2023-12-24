@@ -1,0 +1,6 @@
+if SHIELD_KEEB1
+
+config ZMK_KEYBOARD_NAME
+    default "Keeb1"
+
+endif
