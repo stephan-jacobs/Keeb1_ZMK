@@ -68,13 +68,13 @@
                 &none           &kp BANG            &kp N4          &kp N5          &kp N6              &trans          &trans          &kp PIPE            &kp MINUS           &kp SLASH       &trans          &none
                 &none           &mt LCTRL DOT       &mt LALT N1     &mt LGUI N2     &mt LSHFT N3        &kp TAB         &trans          &mt RSHFT APOS      &mt RGUI UNDER      &mt RALT EQUAL  &mt RCTRL STAR  &none
                 &none           &kp TILDE           &kp N7          &kp N8          &kp N9              &kp SPACE       &trans          &kp PLUS            &kp QUESTION        &kp EXCL        &trans          &none
-                &none           &none               &none           &none           &kp N0              &trans                          &trans              &none               &none           &none           &none
+                &none           &none               &none           &kp N0          &trans              &none                           &none               &none               &none           &none           &none
             >;
         }; 
         
         NAV {
             bindings = <
-                &none           &kp ESC             &kp F1          &kp F2          &kp F3              &kp F4          &kp PAGE_UP     &kp HOME            &kp UP              &kp END         &kp F1          &none
+                &none           &kp ESC             &kp F1          &kp F2          &kp F3              &kp F4          &kp PAGE_UP     &kp HOME            &kp UP              &kp END         &bootloader     &none
                 &none           &kp LCTRL           &kp LALT        &kp LGUI        &kp LSHFT           &kp F5          &kp BSPC        &kp LEFT            &kp DOWN            &kp RIGHT       &kp DELETE      &none
                 &none           &kp LG(Z)           &kp LG(X)       &kp LG(C)       &kp LG(V)           &kp LG(V)       &kp PAGE_DOWN   &kp C_MUTE          &kp C_VOL_DN        &kp C_VOL_UP    &trans          &none
                 &none           &none               &none           &to 0           &trans              &none                           &trans              &kp ESC             &none           &none           &none
