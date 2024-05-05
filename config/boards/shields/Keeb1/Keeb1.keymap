@@ -49,14 +49,14 @@
         DEFAULT {
             bindings = <
                 &none           &kp Q               &kp W           &kp F           &kp P               &kp B           &kp J           &kp L               &kp U               &kp Y           &kp TAB         &none
-                &none           &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &kp M           &mt RSHFT N         &mt RGUI E          &mt ALT I       &mt RCTRL O     &none
+                &none           &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &kp M           &mt RSHFT N         &mt RGUI E          &mt RALT I      &mt RCTRL O     &none
                 &none           &kp Z               &kp X           &kp C           &kp D               &kp V           &kp K           &kp H               &kp COMMA           &kp DOT         &to NAV         &none
                 &none           &none               &none           &mo SYMBOL      &mt LGUI BSPC       &none                           &kp SPACE           &lt NUMBER RETURN   &none           &none           &none
             >;
         }; 
         SYMBOL {
             bindings = <
-                &none           &trans              &kp BSLH        &kp PRCNT       &kp DOLLAR          &trans          &trans          &kp CARET           &kp LBRC            &kp RBRC        &kp ALT(TAB)    &none
+                &none           &trans              &kp BSLH        &kp PRCNT       &kp DOLLAR          &trans          &trans          &kp CARET           &kp LBRC            &kp RBRC        &kp LA(TAB)     &none
                 &none           &mt LCTRL STAR      &mt LALT LPAR   &mt LGUI RPAR   &mt LSHFT COLON     &kp TAB         &kp BSPC        &mt RSHFT DQT       &mt RGUI LBKT       &mt RALT RBKT   &mt RCTRL SEMI  &none
                 &none           &trans              &kp GRAVE       &kp AT_SIGN     &kp AMPERSAND       &trans          &trans          &kp HASH            &kp LESS_THAN       &kp GT          &trans          &none
                 &none           &none               &none           &trans          &trans              &none                           &trans              &kp ESC             &none           &none           &none
