@@ -11,7 +11,7 @@
 //TODO: alt backspace -> delete
 //This layout is based on https://shixnya.org/?p=627
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <1000>;
 };
 / {  
     // behaviors {
