@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // Layers
 #define DEFAULT 0
@@ -51,10 +52,10 @@
 
         DEFAULT {
             bindings = <
-                &kp Q               &kp W           &kp F           &kp P               &kp B           &none           &none           &kp J           &kp L               &kp U               &kp Y           &kp TAB
-                &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &none           &none           &kp M           &mt RSHFT N         &mt RGUI E          &mt RALT I      &mt RCTRL O
+                &kp Q               &kp W           &kp F           &kp P               &kp B           &none           &msc SCRL_UP    &kp J           &kp L               &kp U               &kp Y           &kp TAB
+                &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &none           &msc SCRL_DOWN  &kp M           &mt RSHFT N         &mt RGUI E          &mt RALT I      &mt RCTRL O
                 &kp Z               &kp X           &kp C           &kp D               &kp V           &none           &none           &kp K           &kp H               &kp COMMA           &kp DOT         &mo NAV
-                &none               &none           &none           &mo SYMBOL      &mt LGUI BSPC       &none                           &kp SPACE           &lt NUMBER RETURN   &none           &none           &none
+                &none               &none           &none           &mo SYMBOL          &mt LGUI BSPC   &none                           &kp SPACE       &lt NUMBER RETURN   &mkp RCLK           &none           &none
             >;
         }; 
         SYMBOL {
