@@ -8,7 +8,7 @@
 #define NUMBER 2
 #define NAV 3
 
-//TODO: alt backspace -> delete
+
 //This layout is based on https://shixnya.org/?p=627
 &mt {
     // tapping-term-ms = <1000>;
@@ -51,35 +51,35 @@
 
         DEFAULT {
             bindings = <
-                &none           &kp Q               &kp W           &kp F           &kp P               &kp B           &kp J           &kp L               &kp U               &kp Y           &kp TAB         &none
-                &none           &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &kp M           &mt RSHFT N         &mt RGUI E          &mt RALT I      &mt RCTRL O     &none
-                &none           &kp Z               &kp X           &kp C           &kp D               &kp V           &kp K           &kp H               &kp COMMA           &kp DOT         &mo NAV         &none
-                &none           &none               &none           &mo SYMBOL      &mt LGUI BSPC       &none                           &kp SPACE           &lt NUMBER RETURN   &none           &none           &none
+                &kp Q               &kp W           &kp F           &kp P               &kp B           &none           &none           &kp J           &kp L               &kp U               &kp Y           &kp TAB
+                &mt LCTRL A         &mt LALT R      &mt LGUI S      &mt LSHFT T         &kp G           &none           &none           &kp M           &mt RSHFT N         &mt RGUI E          &mt RALT I      &mt RCTRL O
+                &kp Z               &kp X           &kp C           &kp D               &kp V           &none           &none           &kp K           &kp H               &kp COMMA           &kp DOT         &mo NAV
+                &none               &none           &none           &mo SYMBOL      &mt LGUI BSPC       &none                           &kp SPACE           &lt NUMBER RETURN   &none           &none           &none
             >;
         }; 
         SYMBOL {
             bindings = <
-                &none           &kp ESC             &kp BSLH        &kp PRCNT       &kp DOLLAR          &trans          &trans          &kp CARET           &kp LBRC            &kp RBRC        &kp LA(TAB)     &none
-                &none           &mt LCTRL STAR      &mt LALT LPAR   &mt LGUI RPAR   &mt LSHFT COLON     &kp TAB         &kp BSPC        &mt RSHFT DQT       &mt RGUI LBKT       &mt RALT RBKT   &mt RCTRL SEMI  &none
-                &none           &trans              &kp GRAVE       &kp AT_SIGN     &kp AMPERSAND       &trans          &trans          &kp HASH            &kp LESS_THAN       &kp GT          &trans          &none
+                &kp ESC             &kp BSLH        &kp PRCNT       &kp DOLLAR          &trans          &none           &none           &trans          &kp CARET           &kp LBRC            &kp RBRC        &kp LA(TAB)
+                &mt LCTRL STAR      &mt LALT LPAR   &mt LGUI RPAR   &mt LSHFT COLON     &kp TAB         &none           &none           &kp BSPC        &mt RSHFT DQT       &mt RGUI LBKT       &mt RALT RBKT   &mt RCTRL SEMI
+                &trans              &kp GRAVE       &kp AT_SIGN     &kp AMPERSAND       &trans          &none           &none           &trans          &kp HASH            &kp LESS_THAN       &kp GT          &trans
                 &none           &none               &none           &trans          &trans              &none                           &trans              &kp ESC             &none           &none           &none
             >;
         }; 
         
         NUMBER {
             bindings = <
-                &none           &kp BANG            &kp N4          &kp N5          &kp N6              &trans          &trans          &kp PIPE            &kp MINUS           &kp SLASH       &kp DEL         &none
-                &none           &mt LCTRL DOT       &mt LALT N1     &mt LGUI N2     &mt LSHFT N3        &kp TAB         &trans          &mt RSHFT APOS      &mt RGUI UNDER      &mt RALT EQUAL  &mt RCTRL STAR  &none
-                &none           &kp TILDE           &kp N7          &kp N8          &kp N9              &kp SPACE       &trans          &kp PLUS            &kp QUESTION        &kp EXCL        &trans          &none
+                &kp BANG            &kp N4          &kp N5          &kp N6              &trans          &none           &none           &trans          &kp PIPE            &kp MINUS           &kp SLASH       &kp DEL
+                &mt LCTRL DOT       &mt LALT N1     &mt LGUI N2     &mt LSHFT N3        &kp TAB         &none           &none           &trans          &mt RSHFT APOS      &mt RGUI UNDER      &mt RALT EQUAL  &mt RCTRL STAR
+                &kp TILDE           &kp N7          &kp N8          &kp N9              &kp SPACE       &none           &none           &trans          &kp PLUS            &kp QUESTION        &kp EXCL        &trans
                 &none           &none               &none           &kp N0          &trans              &none                           &none               &none               &none           &none           &none
             >;
         }; 
         
         NAV {
             bindings = <
-                &none           &kp ESC             &kp F1          &kp F2          &kp F3              &kp F4          &kp PAGE_UP     &kp HOME            &kp UP              &kp END         &bootloader     &none
-                &none           &kp LCTRL           &kp LALT        &kp LGUI        &kp LSHFT           &kp F5          &kp BSPC        &kp LEFT            &kp DOWN            &kp RIGHT       &trans          &none
-                &none           &kp LG(Z)           &kp LG(X)       &kp LG(C)       &kp LG(V)           &kp LG(V)       &kp PAGE_DOWN   &kp C_MUTE          &kp C_VOL_DN        &kp C_VOL_UP    &trans          &none
+                &kp ESC             &kp F1          &kp F2          &kp F3              &kp F4          &none           &none           &kp PAGE_UP     &kp HOME            &kp UP              &kp END         &bootloader
+                &kp LCTRL           &kp LALT        &kp LGUI        &kp LSHFT           &kp F5          &none           &none           &kp BSPC        &kp LEFT            &kp DOWN            &kp RIGHT       &trans
+                &kp LG(Z)           &kp LG(X)       &kp LG(C)       &kp LG(V)           &kp LG(V)       &none           &none           &kp PAGE_DOWN   &kp C_MUTE          &kp C_VOL_DN        &kp C_VOL_UP    &trans
                 &none           &none               &none           &trans          &trans              &none                           &trans              &kp ESC             &none           &none           &none
             >;
         }; 
